@@ -1,4 +1,5 @@
 import React from 'react';
+import Ripples from 'react-ripples';
 
 const LibrarySong = ({ song, songs, setCurrentSong, audioRef, isPlaying, setSongs, id }) => {
 
@@ -24,6 +25,7 @@ const LibrarySong = ({ song, songs, setCurrentSong, audioRef, isPlaying, setSong
     }
 
     return(
+        <Ripples color="#20bde4" during={2200}>
         <div onClick={songSelectHandler} className={`library-song ${song.active ? "selected" : ""}`}>
             <img alt={song.name} src={song.cover}></img>
             <div className="song-description">
@@ -31,6 +33,7 @@ const LibrarySong = ({ song, songs, setCurrentSong, audioRef, isPlaying, setSong
                 <h4>{song.artist}</h4>
             </div>
         </div>
+        </Ripples>
     );
 }
 

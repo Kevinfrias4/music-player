@@ -3,16 +3,23 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    h1 {
+        font-size: 2.2rem;
+    }
     button {
         background: transparent;
         border: none;
         cursor: pointer;
-        border: 2px solid rgb(65, 65, 65);
+        //border: 2px solid rgb(65, 65, 65);
+        border: 2px solid rgb(37, 166, 195);
         padding: 0.5rem;
         transition: all 0.3s ease;
         &:hover {
-            background: rgb(65, 65, 65);
+            //background: rgb(65, 65, 65);
+            background:rgb(37, 166, 195);
             color: white;
+            box-shadow: 0 0 8px rgb(28, 235, 201), 
+            0 0 8px rgb(0, 255, 213);
         }
     }
 }
